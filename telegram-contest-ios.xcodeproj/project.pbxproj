@@ -14,6 +14,7 @@
 		4B6444FD28FA036E000EF411 /* telegram_contest_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6444FC28FA036E000EF411 /* telegram_contest_iosUITests.swift */; };
 		4B6444FF28FA036E000EF411 /* telegram_contest_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6444FE28FA036E000EF411 /* telegram_contest_iosUITestsLaunchTests.swift */; };
 		4B64450C28FA03BE000EF411 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64450B28FA03BE000EF411 /* ContentView.swift */; };
+		4B64451228FA056A000EF411 /* CoreSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64451128FA056A000EF411 /* CoreSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		4B6444FC28FA036E000EF411 /* telegram_contest_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telegram_contest_iosUITests.swift; sourceTree = "<group>"; };
 		4B6444FE28FA036E000EF411 /* telegram_contest_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telegram_contest_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B64450B28FA03BE000EF411 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B64451128FA056A000EF411 /* CoreSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +97,9 @@
 		4B6444DA28FA036A000EF411 /* telegram-contest-ios */ = {
 			isa = PBXGroup;
 			children = (
-				4B6444DB28FA036A000EF411 /* AppDelegate.swift */,
-				4B6444E428FA036E000EF411 /* Assets.xcassets */,
-				4B64450B28FA03BE000EF411 /* ContentView.swift */,
-				4B6444E628FA036E000EF411 /* LaunchScreen.storyboard */,
-				4B6444E928FA036E000EF411 /* Info.plist */,
+				4B64451028FA0511000EF411 /* Resources */,
+				4B64450F28FA04FD000EF411 /* User Stories */,
+				4B64450D28FA04EE000EF411 /* Core */,
 			);
 			path = "telegram-contest-ios";
 			sourceTree = "<group>";
@@ -119,6 +119,33 @@
 				4B6444FE28FA036E000EF411 /* telegram_contest_iosUITestsLaunchTests.swift */,
 			);
 			path = "telegram-contest-iosUITests";
+			sourceTree = "<group>";
+		};
+		4B64450D28FA04EE000EF411 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B64451128FA056A000EF411 /* CoreSwift.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4B64450F28FA04FD000EF411 /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+				4B64450B28FA03BE000EF411 /* ContentView.swift */,
+				4B6444DB28FA036A000EF411 /* AppDelegate.swift */,
+			);
+			path = "User Stories";
+			sourceTree = "<group>";
+		};
+		4B64451028FA0511000EF411 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B6444E428FA036E000EF411 /* Assets.xcassets */,
+				4B6444E628FA036E000EF411 /* LaunchScreen.storyboard */,
+				4B6444E928FA036E000EF411 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +280,7 @@
 			files = (
 				4B64450C28FA03BE000EF411 /* ContentView.swift in Sources */,
 				4B6444DC28FA036A000EF411 /* AppDelegate.swift in Sources */,
+				4B64451228FA056A000EF411 /* CoreSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "telegram-contest-ios/Info.plist";
+				INFOPLIST_FILE = "telegram-contest-ios/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "telegram-contest-ios/Info.plist";
+				INFOPLIST_FILE = "telegram-contest-ios/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
